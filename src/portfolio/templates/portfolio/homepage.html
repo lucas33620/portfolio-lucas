@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Lucas Baquey – Portfolio</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- ✅ MENU HORIZONTAL -->
+<header class="main-header">
+    <div class="logo">Lucas<span> portfolio</span></div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/aboutme/">About me</a></li>
+            <li><a href="/projects/">Projects</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ✅ CONTENU PRINCIPAL -->
+<div class="page-wrapper">
+
+    <!-- Section gauche -->
+    <section class="left-section">
+        <h4>SALUT, JE SUIS</h4>
+        <h1>Lucas Baquey</h1>
+        <p>Ingénieur systèmes embarqués et développeur Python/Django.</p>
+
+        <a href="contact/" class="btn">Me contacter</a>
+
+        <div class="social-icons">
+            <a href="https://github.com/lucas33620" target="_blank">
+                <img src="{% static 'css/github.svg' %}" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/lucas-baquey-47051a222/" target="_blank">
+                <img src="{% static 'css/linkedin.svg' %}" alt="LinkedIn">
+            </a>
+        </div>
+    </section>
+
+    <!-- Section droite -->
+    <section class="right-section">
+        <div class="image-wrapper">
+            <img src="{% static 'css/lucas.jpg' %}" alt="Lucas Baquey">
+        </div>
+        <div class="resume-box">
+            <p id="about">Je conçois des solutions techniques robustes, élégantes et documentées. Passionné par l’innovation, je m’investis dans chaque projet avec rigueur et curiosité.</p>
+            <a href="#" class="btn-secondary">Voir mon CV</a>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
