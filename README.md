@@ -34,6 +34,3 @@ Ce projet est la mise en pratique concrète des notions apprises dans la premiè
 - Hébergement local sur VPS Ubuntu (OVH)
 
 ---
-
-## 📁 Structure du projet
-
