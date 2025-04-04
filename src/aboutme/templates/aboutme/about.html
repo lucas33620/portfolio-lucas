@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>À propos – Lucas Baquey</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- ✅ HEADER FIXE -->
+<header class="main-header">
+    <div class="logo">Lucas<span> portfolio</span></div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/aboutme/">About me</a></li>
+            <li><a href="/portfolio/">Projects</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ✅ SECTION ABOUT -->
+<div class="page-wrapper">
+
+    <section class="left-section">
+        <h4>À PROPOS</h4>
+        <h1>Qui suis-je ?</h1>
+        <p>Je suis Lucas, ingénieur systèmes embarqués et développeur passionné par la création de solutions logicielles robustes et élégantes.</p>
+        <p>Après plusieurs projets techniques et une formation intensive sur Django, je construis aujourd’hui un portfolio moderne pour démontrer mes compétences en Python, backend web et déploiement serveur.</p>
+
+        <a href="/contact/" class="btn">Travailler ensemble ?</a>
+
+        <div class="social-icons">
+            <a href="https://github.com/lucas33620" target="_blank">
+                <img src="{% static 'css/github.svg' %}" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/lucas-baquey-47051a222/" target="_blank">
+                <img src="{% static 'css/linkedin.svg' %}" alt="LinkedIn">
+            </a>
+        </div>
+    </section>
+
+    <section class="right-section">
+        <div class="image-wrapper">
+            <img src="{% static 'css/lucas.jpg' %}" alt="Lucas Baquey">
+        </div>
+        <div class="resume-box">
+            <p>Mon approche ? Un mélange de rigueur, d’autonomie, et de curiosité. J’aime transformer des idées complexes en applications simples et claires.</p>
+            <a href="#" class="btn-secondary">Voir mon CV</a>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>

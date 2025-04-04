@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact – Lucas Baquey</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="logo">Lucas<span> portfolio</span></div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/aboutme/">About me</a></li>
+            <li><a href="/portfolio/">Projects</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="page-wrapper">
+
+    <section class="left-section">
+        <h4>ME CONTACTER</h4>
+        <h1>Un projet en tête ?</h1>
+        <p>Je suis disponible pour échanger autour de vos besoins techniques ou collaborer sur des projets concrets.</p>
+
+        <a href="mailto:lucas.baquey@hotmail.com" class="btn">Envoyer un mail</a>
+
+        <div class="social-icons">
+            <a href="https://github.com/lucas33620" target="_blank">
+                <img src="{% static 'css/github.svg' %}" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/lucas-baquey-47051a222/" target="_blank">
+                <img src="{% static 'css/linkedin.svg' %}" alt="LinkedIn">
+            </a>
+        </div>
+    </section>
+
+    <section class="right-section">
+        <div class="resume-box">
+            <p>Que ce soit pour une mission freelance, un CDI remote ou un projet collaboratif open-source, n'hésitez pas à me contacter !</p>
+            <a href="https://www.linkedin.com/in/lucas-baquey-47051a222/" class="btn-secondary" target="_blank">Discutons sur LinkedIn</a>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>

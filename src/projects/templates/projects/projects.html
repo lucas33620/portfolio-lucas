@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio – Lucas Baquey</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="logo">Lucas<span> portfolio</span></div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/aboutme/">About me</a></li>
+            <li><a href="/portfolio/">Projects</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="page-wrapper" style="flex-direction: column; padding: 100px 60px;">
+    <h1 style="color:#1e90ff; font-size: 2.5em; margin-bottom: 30px;">Mes projets</h1>
+
+    <div style="display: flex; gap: 40px; flex-wrap: wrap;">
+        <!-- Projet 1 -->
+        <div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.05); padding:20px; max-width:300px;">
+            <h3 style="margin-top:0;">Portfolio Django</h3>
+            <p>Site web responsive construit avec Django, HTML/CSS, hébergé sur VPS. Git + SSH + déploiement local.</p>
+            <a href="https://github.com/lucas33620/portfolio-lucas" target="_blank" class="btn-secondary">Voir sur GitHub</a>
+        </div>
+
+        <!-- Projet 2 -->
+        <div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.05); padding:20px; max-width:300px;">
+            <h3>Analyseur RF STM32</h3>
+            <p>Projet embarqué avec STM32, UART, trame RF, traitement Python & affichage via API REST (Django à venir).</p>
+            <a href="#" class="btn-secondary">En cours</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
