@@ -1,0 +1,18 @@
+# Environnement Python
+.venv/
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+# Fichiers Django
+db.sqlite3
+.env
+
+# Fichiers système
+.DS_Store
+.idea/
+.vscode/
+
+# Déploiement
+*.log
+staticfiles/
